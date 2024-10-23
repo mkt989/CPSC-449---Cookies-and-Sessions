@@ -20,7 +20,7 @@ def upload_file():
 
     file = request.files['file']
 
-    # If no file is selected
+    # If no file is selected.
     if file.filename == '':
         return jsonify({"message": "No file selected for uploading"}), 400
 
