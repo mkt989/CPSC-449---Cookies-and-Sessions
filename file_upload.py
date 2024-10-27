@@ -30,6 +30,5 @@ def upload_file():
         file.save(filepath)
         return jsonify({"message": f"File '{file.filename}' uploaded successfully!"}), 200
 
-
 if __name__ == '__main__':
     app.run(debug=True)
